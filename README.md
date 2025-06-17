@@ -37,3 +37,17 @@ If not joined, the bot will block access.
 ```bash
 git clone https://github.com/arcadedecay/YTDownloaderBot
 cd YTDownloaderBot
+Create .env file
+ BOT_TOKEN=your_bot_token_here
+Run the bot
+
+python3 bot.py
+or
+python bot.py
+
+
+
+
+
+
+
