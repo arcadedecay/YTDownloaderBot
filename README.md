@@ -32,25 +32,29 @@ If not joined, the bot will block access.
 
 ## 🔧 Setup & Run Locally
 
-## 1. Clone this repo
+#1. Clone this repo
 
-```bash
-git clone https://github.com/arcadedecay/YTDownloaderBot
-cd YTDownloaderBot
+     git clone https://github.com/arcadedecay/YTDownloaderBot
+    cd YTDownloaderBot
 
-2 Create .env file 
-BOT_TOKEN=your_bot_token_here
+#2. Create .env file 
 
-3 Install requirements 
-pip install -r requirements.txt
+      BOT_TOKEN=your_bot_token_here
 
-Or manually:
-pip install python-telegram-bot yt-dlp python-dotenv
+#3.  Install requirements 
 
-4 Run the bot 
-python bot.py or python3 bot.py 
+    pip install -r requirements.txt
 
-💬 Bot Commands and Workflow
+#Or. manually:
+
+           
+      pip install python-telegram-bot yt-dlp python-dotenv
+
+#4 Run the bot 
+
+      python bot.py or python3 bot.py 
+
+#💬 Bot Commands and Workflow
 Start Bot
 Bot sends welcome message with info, credits, and instructions.
 
@@ -69,19 +73,19 @@ Donation/Ad link
 If Not Joined Channel
 Bot blocks usage and shows a “Join Channel” button.
 
-🛠 Support & Contact
+#🛠 Support & Contact
 ❌ Error or bug? Report here: @ArcadeDecaysupportadmin_bot
 
-💬 Want to advise or ask something? DM: @ArcadeDecaysupportadmin_bot
+#💬 Want to advise or ask something? DM: @ArcadeDecaysupportadmin_bot
 
-💖 Support Development
+#💖 Support Development
 This bot is hosted on a free server and may be slow sometimes. If you'd like to support future updates:
 
-👉 Click here to support via ads
-👉 Premium version coming soon!
+#👉 Click here to support via ads
+#👉 Premium version coming soon!
 
-🧠 What is yt-dlp?
-yt-dlp is an advanced fork of youtube-dl. It is used to extract and download videos and audio from YouTube and many other platforms.
+#🧠 What is yt-dlp?
+      yt-dlp is an advanced fork of youtube-dl. It is used to extract and download videos and audio from YouTube and many other platforms.
 
 We use it to:
 
@@ -91,7 +95,7 @@ Choose quality and format
 
 Save and send it back to users
 
-📄 License
+#📄 License
 This project is licensed under the MIT License.
 © 2025 by Arcade Decay
 
