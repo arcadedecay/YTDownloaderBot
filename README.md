@@ -32,25 +32,25 @@ If not joined, the bot will block access.
 
 ## 🔧 Setup & Run Locally
 
-#1. Clone this repo
+1. Clone this repo
 
      git clone https://github.com/arcadedecay/YTDownloaderBot
     cd YTDownloaderBot
 
-#2. Create .env file 
+2. Create .env file 
 
       BOT_TOKEN=your_bot_token_here
 
-#3.  Install requirements 
+3.  Install requirements 
 
-    pip install -r requirements.txt
+      pip install -r requirements.txt
 
-#Or. manually:
+Or. manually:
 
            
       pip install python-telegram-bot yt-dlp python-dotenv
 
-#4 Run the bot 
+4 Run the bot 
 
       python bot.py or python3 bot.py 
 
