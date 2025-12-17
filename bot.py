@@ -85,7 +85,10 @@ async def download_video(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def handle_download_and_send(chat_id, url, context, format_choice):
     try:
-        cmd = ["yt-dlp"]
+       cmd = [
+    "yt-dlp",
+    "--js-runtimes", "node"
+]
         if format_choice == "mp3":
             cmd += [
                 "-f", "bestaudio/best",
