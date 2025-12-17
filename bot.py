@@ -85,20 +85,20 @@ async def download_video(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def handle_download_and_send(chat_id, url, context, format_choice):
     try:
-       cmd = [
-    "yt-dlp",
-    "--js-runtimes", "node"
-]
+        cmd = [
+            "yt-dlp",
+            "--js-runtimes", "node"
+        ]
         if format_choice == "mp3":
-           cmd = [
-    "yt-dlp",
-    "--js-runtimes", "node",
-    "-f", "bestaudio/best",
-    "--extract-audio",
-    "--audio-format", "mp3",
-    "-o", "%(title)s.%(ext)s",
-    url
-]
+            cmd = [
+                "yt-dlp",
+                "--js-runtimes", "node",
+                "-f", "bestaudio/best",
+                "--extract-audio",
+                "--audio-format", "mp3",
+                "-o", "%(title)s.%(ext)s",
+                url
+            ]
         else:
             format_flag = "bestvideo[height<=720]+bestaudio/best"
             if format_choice == "480p":
@@ -108,13 +108,13 @@ async def handle_download_and_send(chat_id, url, context, format_choice):
             elif format_choice == "1080p":
                 format_flag = "bestvideo[height<=1080]+bestaudio/best"
             cmd = [
-    "yt-dlp",
-    "--js-runtimes", "node",
-    "-f", format_flag,
-    "--merge-output-format", "mp4",
-    "-o", "%(title)s.%(ext)s",
-    url
-]
+                "yt-dlp",
+                "--js-runtimes", "node",
+                "-f", format_flag,
+                "--merge-output-format", "mp4",
+                "-o", "%(title)s.%(ext)s",
+                url
+            ]
         process = await asyncio.create_subprocess_exec(*cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE)
         stdout, stderr = await process.communicate()
 
@@ -151,4 +151,3 @@ app.add_handler(CallbackQueryHandler(format_selection))
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, download_video))
 
 app.run_polling()
-''
